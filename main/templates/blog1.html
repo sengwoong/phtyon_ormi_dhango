@@ -1,0 +1,18 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>제목</th>
+            <th>내용</th>
+            <th>이미지</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in db.values %}
+        <tr>
+            {% for i in data.values %}
+            <td>{{i}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
